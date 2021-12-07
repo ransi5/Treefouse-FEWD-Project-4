@@ -1,0 +1,13 @@
+.form {
+  flex-basis: flexbasis(1,0px);
+  .input{
+    border: none;
+    @include widthcenter(94%, 10px, 0px);
+    padding: $inputpad;
+    @include roundy($rad:null, $brdside:bottom, $brdr:5px solid $fontprimarycolor)
+  }
+}
+
+.hidden {
+  @include hidden;
+}

@@ -1,0 +1,33 @@
+.container {
+  padding: $contpad;
+  @media (min-width: $mqbreak) {
+    @include centers(1400px)
+  }
+}
+
+.row {
+  @include flexy($dir: column);
+  padding: $rowpad;
+  @media (min-width: $mqbreak) {
+    @include flexy($dir: row);
+  }
+}
+
+[class^=col] {
+  margin-top: $colmargtop;
+  flex-basis: flexbasis(1,0px);
+  min-height: $colminheit;
+  padding: $colpad;
+  @include roundy($brdradius);
+}
+
+@for $i from 1 through 12 {
+  .theme.col-#{$i}{
+    background-color: nth($gridcolors, $i);
+  }
+}
+
+
+.card {
+  flex-basis: $cardflxbas;
+}

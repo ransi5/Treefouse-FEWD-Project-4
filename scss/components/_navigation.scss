@@ -1,0 +1,30 @@
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+
+.nav {
+  padding-left: 0;
+  flex-basis: flexbasis(1, 0px);
+  @include flexy($dir: column);
+  &-link {
+    text-align: center;
+    @roundy($brdradius);
+    padding: $navlinkpad;
+    display: block;
+    width: $flxsmwidth;
+    transition:
+      background-color .2s ease-in-out,
+      color .2s ease-in-out;
+    @media (min-width: $mqbreak) {
+      flex-basis: $navlnkflxbasis;
+    }
+      &:hover{
+        color: $fonthovercolor;
+        background-color: $fontprimarycolor;
+      }
+    }
+  @media (min-width: $mqbreak) {
+    @include flexy($dir: row, $just: flex-end);
+    align-items: center;
+  }
+}

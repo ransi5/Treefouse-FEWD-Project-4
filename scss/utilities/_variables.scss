@@ -1,0 +1,65 @@
+// Color Variables-----------------------------------//
+
+$fontcolor: #777;
+$fontprimarycolor: #58e1c1;
+$fontlinkcolor: #51ddfc;
+$gridcolors: (#927bc1, #fd7856, #deb2ee, #7ee6fd, #88d9a0, #4da2bb, #ec9fa3, #fd9f85, #e4757a, #63cc82, #51ddfc, #80e8d1);
+$fonthovercolor: #fff;
+$bgbordcolor: #58e1c1;
+$bgcolorbytype: ("default":#51ddfc, "error":#e4757a, "info":#927bc1, "success":#63cc82, "warning":#fd7856,);
+$imgbordcolor: #ccc;
+
+// Font ----------------------------------------------//
+
+$fontstackprimary: 'Lato', sans-serif;
+$fontlight: 300;
+$fontbold: 700;
+$blkquotefntsiz: 1.5em;
+
+// border properties--------------------------------------------//
+
+$brdradius: 5px;
+
+// Flex Variables------------------------------------------------//
+
+$flxsmwidth: 100%;          //also used for .btn width
+$navlnkflxbasis: 100px;     //.nav-link flex basis
+$btnmqmdtopbotpad: 10px;    // .btn padding for top and bottom
+$btnmqmdlefritpad: 30px;    // .btn padding for left and right
+$gutter: 10px;              // margin-left applied to .col + .col and .btn + .btn in MQ md
+
+//Text Variables and HTML Typography and navigation elements variables such as padding, margins--------//
+
+$paralinheight: 1.45em;     // Line height applied to all paragraphs
+$headprimarymargleft: 10px; // h1 padding
+$blkquotemargleft: 20px;    // blockquote margin left
+$blkquotepadgleft: 20px;    // blockquote padding left
+$navlinkpad: 10px 0;        // padding for all links and buttons
+
+
+// Grid text variablesVand HTML elements variables such as padding, margins---//
+$contpad: 0 10px;         // .container padding
+$rowpad: 1em 10px;        //.row padding
+$colmargtop: 10px;        //.col margin top
+$colminheit: 25px;        // .col min height
+$colpad: 10px;            // .col padding
+$cardflxbas: 100%;        // .card class basis set to 100% across MQ
+
+// buttons---------------------------------------------//
+
+$btnmargtop: 15px;        //Button margin top
+$txtuppercas: uppercase;   //Apllied to .btn class
+
+//  Form------------------------------------------------------//
+
+$inputpad: 10px;            // input padding
+$imgfrmpad: 13px;
+
+
+// Images------------------------------------------------------//
+
+$imgavtheit: 100%;
+
+//  Media Queries-----------------------------------------//
+
+$mqbreak: 768px;

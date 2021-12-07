@@ -1,0 +1,68 @@
+//Universal mixin----------------------------//
+
+@mixin universal($fonfam:null, $foncol:null){
+  font-family: $fonfam;
+  color: $foncol;
+  box-sizing: border-box;
+}
+
+
+
+// Flex Mixin------------------------------------------------//
+
+
+@mixin flexy($disp: flex,
+  $dir: null,
+  $wrap:null,
+  $just: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  @content;
+}
+
+// border radius or/and border property mixin------------------------//
+
+@mixin roundy($rad,
+  $brdside: null,
+  $brdr: null){
+    border-radius: $rad;
+    @if $brdside == border {
+      border: $brdr;
+    }
+    @if $brdside == left {
+      border-left: $brdr;
+    }
+    @if $brdside == right {
+      border-right: $brdr;
+    }
+    @if $brdside == bottom {
+      border-bottom: $brdr;
+    }
+    border-radius: $rad;
+}
+
+// Centers Elements----------------------------------------------//
+
+@mixin centers($mxwidth:null, $margtop:null, $margbot:null){
+  max-width: $mxwidth;
+  margin: $margtop auto $margbot;
+  display: block
+}
+
+@mixin widthcenter($width:null, $margtop:null, $margbot:null){
+  width: $width;
+  margin: $margtop auto $margbot;
+  display: block;
+}
+// Hides and shows password for input fields---------------------------------//
+
+@mixin hidden{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}

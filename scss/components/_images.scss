@@ -1,0 +1,14 @@
+.img-avatar {
+  @include centers(100%, 10px, 0px);
+  max-height: $imgavtheit;
+}
+
+.img-frame {
+  @include centers(100%, $margtop:10px, $margbot:0px);
+  padding: $imgfrmpad;
+  @include roundy($rad:null, $brdside:border, $brdr:1px solid $imgbordcolor)
+}
+
+.img-logo {
+  @include centers($mxwidth:null, $margtop:0px, $margbot:0px);
+}

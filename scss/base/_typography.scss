@@ -1,0 +1,49 @@
+// Base Styles---------------------------------------//
+
+* {
+  @include universal($fontstackprimary, $fontcolor);
+}
+
+
+
+.headline-secondary {
+  font-weight: $fontlight;
+}
+
+.link {
+  font-weight: $fontbold;
+}
+
+.blockquote {
+  font-size: $blkquotefntsiz;
+  font-weight: $fontlight;
+  font-style: italic;
+  margin-left: $blkquotemargleft;
+  padding-left: $blkquotepadgleft;
+  @include roundy(5px, left, 8px solid $fontprimarycolor);
+}
+
+// folowwing apply to all specified Elements---------------//
+
+p{
+  line-height: $paralinheight;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headline-primary {
+  color: $fontprimarycolor;
+  margin-left: $headprimarymargleft;
+}
+
+.headline-secondary {
+  font-weight: $fontlight;
+  color: $fontcolor;
+}
+
+.link {
+  color: $fontlinkcolor;
+  font-weight: $fontbold;
+}

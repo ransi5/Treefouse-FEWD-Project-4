@@ -1,0 +1,21 @@
+.btn {
+  margin-top: $btnmargtop;
+  width: $flxsmwidth;
+  color: $fonthovercolor;
+  padding: $navlinkpad;
+  text-transform: $txtuppercas;
+  border: none;
+  @include roundy($brdradius);
+  @media (min-width: $mqbreak) {
+    padding: $btnmqmdtopbotpad $btnmqmdlefritpad
+  }
+}
+
+@each $class, $col in $bgcolorbytype {
+  .#{$class}{
+    background-color: $col;
+    &:hover{
+      background-color: lighten($col, 10%);
+    }
+  }
+}

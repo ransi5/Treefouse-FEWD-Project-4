@@ -1,0 +1,49 @@
+
+@media screen and (min-width: $mqbreak) {
+    .centered{
+    @include centers($mxwidth:null);
+    }
+
+    [class^=col] + [class^=col] {
+      margin-left: $gutter;
+    }
+
+    [class^=col]{
+      @include flexy($disp: flex, $just: center);
+      align-items: center;
+      margin-top: 0px;
+    }
+
+    @for $i from 1 through 12 {
+      .col-#{$i}{
+        $y: index(2 5 8 11, $i);
+        @if $y != null {
+          $x: .01% * $y;
+          $z: (8.33% * $i) + $x;
+          flex-basis: $z;
+        } @else if index(3 4, $i) {
+          $z: (8.33% * $i) + .01%;
+          flex-basis: $z;
+        } @else if index(6 7, $i) {
+          $z: (8.33% * $i) + .02%;
+          flex-basis: $z;
+        } @else if index(9 10, $i) {
+          $z: (8.33% * $i) + .03%;
+          flex-basis: $z;
+        } @else if index(12, $i) {
+          $z: (8.33% * $i) + .04%;
+          flex-basis: $z;
+        } @else if $i == 1 {
+          $z: 8.33%;
+          flex-basis: $z;
+        }
+      }
+    }
+    .btn + .btn {
+      margin-left: $gutter;
+    }
+    .logo {
+      margin-left: initial;
+      margin-right: initial;
+    }
+}

@@ -8,7 +8,7 @@
   @include flexy($dir: column);
   &-link {
     text-align: center;
-    @roundy($brdradius);
+    @include roundy($brdradius);
     padding: $navlinkpad;
     display: block;
     width: $flxsmwidth;
